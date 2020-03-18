@@ -28,24 +28,28 @@ const tests = [
         "s2" : "bar",
     },
     {
-        "s1" : "foo",
-        "s2" : "brr",
-    },
-    {
         "s1" : "bar",
         "s2" : "foo",
+    },
+    {
+        "s1" : "foo",
+        "s2" : "brr",
     },
     {
         "s1" : "",
         "s2" : "bcd",
     },
     {
-        "s1" : "abcdefghijklmnop",
-        "s2" : "helloWorld",
+        "s1" : "HelloMyNameIsHugoAndThisIsMySubmission",
+        "s2" : "HopeYouFindThisToBeUpToYourCompanyStandards"
+    },
+    {
+        "s1" : "Aacdefg",
+        "s2" : "ruVwXyZ"
     }
 ]
 
-const canMap = function(s1, s2) {
+const canMap = (s1, s2) => {
 
     //Check if length of input strings are equal
     //If they're not a one-to-one mapping is not possible
