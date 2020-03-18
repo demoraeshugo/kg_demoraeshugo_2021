@@ -60,7 +60,9 @@ const canMap = (s1, s2) => {
     var dict = new Set()
 
     for(let i = 0; i < s1Array.length; i++) {
-        let char = s1Array[i]
+        //Normalize character case
+        //If "A" and "a" are considered distinct, remove .toLowerCase()
+        let char = s1Array[i].toLowerCase()
         if(dict.has(char)) {
             //Duplicate character found
             return false
