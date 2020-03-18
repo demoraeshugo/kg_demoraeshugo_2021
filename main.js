@@ -46,10 +46,21 @@ const tests = [
     {
         "s1" : "Aacdefg",
         "s2" : "ruVwXyZ"
+    },
+    {
+        "s1" : "zepfjsk",
+        "s2" : "abcidee"
+    },
+    {
+        "s1" : "",
+        "s2" : ""
     }
 ]
 
 const canMap = (s1, s2) => {
+
+    //Empty Input
+    if(!s1) return false
 
     //Check if length of input strings are equal
     //If they're not a one-to-one mapping is not possible
