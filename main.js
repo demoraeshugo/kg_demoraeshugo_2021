@@ -48,6 +48,7 @@ const tests = [
 const canMap = function(s1, s2) {
 
     //Check if length of input strings are equal
+    //If they're not a one-to-one mapping is not possible
     if(s1.length !== s2.length) return false
 
     //Check for repeating characters in s1
@@ -57,6 +58,7 @@ const canMap = function(s1, s2) {
     for(let i = 0; i < s1Array.length; i++) {
         let char = s1Array[i]
         if(dict.has(char)) {
+            //Duplicate character found
             return false
         } else {
             dict.add(char)
