@@ -36,7 +36,7 @@ const tests = [
         "s2" : "brr",
     },
     {
-        "s1" : "",
+        "s1" : "bcd",
         "s2" : "bcd",
     },
     {
