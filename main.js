@@ -84,7 +84,12 @@ const canMap = (s1, s2) => {
 
     return true
 }
-
+/*
+//Custom Test Cases
 tests.forEach(test => {
     console.log(canMap(test.s1, test.s2))
 })
+*/
+
+const inputTests = process.argv.slice(2)
+console.log(canMap(inputTests[0], inputTests[1]))
